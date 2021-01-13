@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Filtering Modal</title>
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<style>
+			#filtering-modal-el {
+				display: none;
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				background-color: #fff;
+			}
+
+			.filter-modal__header {
+				height: 75px;
+				background-color: #e9e9e9;
+				direction: rtl;
+			}
+
+			.filter-modal__header > .wrapper {
+				width: 95%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 100%;
+			}
+
+			.filter-modal__header_times {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: inline-block;
+				position: relative;
+				background-color: #c4c2c2;
+			}
+
+			.filter-modal__header_times i {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			.filter-modal__content {
+				background-color: #fff;
+				height: 100%;
+				overflow: auto;
+				/* pb box */
+				padding-bottom: 145px;
+			}
+
+			.filter-modal__content > .wrapper {
+				width: 95%;
+				margin: 0 auto;
+				padding: 15px 0 0 0;
+			}
+
+			.filter-modal__button-box {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="filtering-modal-el">
+			<div class="filter-modal__header">
+				<div class="wrapper">
+					<h3 class="h4">فیلتر پروموشن</h3>
+
+					<span class="filter-modal__header_times close-filtering-modal">
+						<i class="fas fa-times"></i>
+					</span>
+				</div>
+			</div>
+
+			<div class="filter-modal__content">
+				<form class="wrapper">
+					<div class="card card-body mt-4">1 filter</div>
+					<div class="card card-body mt-4">2 filter</div>
+					<div class="card card-body mt-4">3 filter</div>
+					<div class="card card-body mt-4">4 filter</div>
+					<div class="card card-body mt-4">5 filter</div>
+					<div class="card card-body mt-4">5 filter</div>
+					<div class="card card-body mt-4">6 filter</div>
+					<div class="card card-body mt-4">7 filter</div>
+					<div class="card card-body mt-4">8 filter</div>
+					<div class="card card-body mt-4">9 filter</div>
+					<div class="card card-body mt-4">11 filter</div>
+					<div class="card card-body mt-4">12 filter</div>
+					<div class="card card-body mt-4">13 filter</div>
+					<div class="card card-body mt-4">14 filter</div>
+					<div class="card card-body mt-4">15 filter</div>
+					<div class="card card-body mt-4">16 filter</div>
+					<div class="card card-body mt-4">17 filter</div>
+					<div class="card card-body mt-4">18 filter</div>
+					<div class="card card-body mt-4">19 filter</div>
+					<div class="card card-body mt-4">21 filter</div>
+					<div class="card card-body mt-4">22 filter</div>
+					<div class="card card-body mt-4">23 filter</div>
+					<div class="card card-body mt-4">24 filter</div>
+					<div class="card card-body mt-4">25 filter</div>
+					<div class="card card-body mt-4">26 filter</div>
+					<div class="card card-body mt-4">27 filter</div>
+					<div class="card card-body mt-4">28 filter</div>
+
+					<div class="filter-modal__button-box">
+						<button type="submit" class="btn btn-success btn-block btn-lg">
+							Submit Form
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<main class="container py-4">
+			<div class="btn btn-dark btn-block btn-lg show-filtering-modal">
+				Show Filtering Modal (this is div element)
+			</div>
+		</main>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -2,5 +2,6 @@
 	"rules": {
 		"semi": "warn",
 		"no-unused-vars": "warn"
-	}
+	},
+	"parserOptions": { "ecmaVersion": 2018 }
 }
